@@ -80,7 +80,7 @@ var Container = React.createClass({displayName: "Container",
         }
       },
       rateApp: function(e){
-        window.open('market://details?id=com.rovio.angrybirdsfight');
+        window.open('market://details?id=com.idiots.colldict');
       },
       render: function() {
           var libraries = this.props.items,

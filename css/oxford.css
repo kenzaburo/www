@@ -123,7 +123,9 @@ input[type="search"] {
   background-color:#002147
 }
 .app-title{
-  color:white;
+  font-weight: bolder;
+  font-size: x-large;
+  color: rgb(226, 249, 27)
 }
 
 #load{
