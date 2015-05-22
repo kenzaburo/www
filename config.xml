@@ -4,7 +4,7 @@
     <description>
         A collocation dictionary base on Oxford Collocation Dictionary
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="trunghuynh.cse@gmail.com" href="http://3idiotsStudio.com">
         3idiots studio
     </author>
     <content src="index.html" />
@@ -18,8 +18,8 @@
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="false" />
-    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="10" />
     <preference name="android-installLocation" value="auto" />

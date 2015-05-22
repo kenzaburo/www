@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/ratchet.min.css">
     <link rel="stylesheet" type="text/css" href="css/oxford.css">
     <script src="js/react.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
   </head>
 
   <body>
@@ -17,4 +18,35 @@
   </body>
   <script type="text/javascript" src="./dict.json"></script>
   <script type="text/javascript" src="js/bundle.js"></script>
+   <script>
+        var admobid = {};
+        if( /(android)/i.test(navigator.userAgent) ) 
+        { 
+            admobid = { // for Android
+                banner: 'ca-app-pub-4077183742810168/1438759131'// or DFP format "/6253334/dfp_example_ad"
+            };
+        } 
+        else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) 
+        {
+            admobid = { // for iOS
+                banner: 'ca-app-pub-4077183742810168/1438759131' // or DFP format "/6253334/dfp_example_ad"
+            };
+        } 
+        else 
+        {
+            admobid = { // for Windows Phone
+                banner: 'ca-app-pub-4077183742810168/1438759131' // or DFP format "/6253334/dfp_example_ad"
+            };
+        }
+ 
+        function initApp() 
+        {
+            AdMob.createBanner({
+                adId: admobid.banner,
+                position: AdMob.AD_POSITION.BOTTOM_CENTER,
+                autoShow: true
+            });
+        }
+        document.addEventListener('deviceready', initApp, false);  
+    </script>
 </html>
